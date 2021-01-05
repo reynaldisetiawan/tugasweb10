@@ -35,8 +35,8 @@
 					<td><?= $row->nama; ?></td>
 					<td><?= $row->alamat; ?></td>
 					<td>
-						<a href="" class="btn btn-danger">Del</a>
-						<a href="" class="btn btn-warning">Edit</a>
+						<a href="hapus.php?nip=<?= $row->nip; ?>" onclick="retrun confirm('yakin anda ingin hapus')" class="btn btn-danger">Del</a>
+						<a href="edit.php?nip=<?= $row->nip; ?>" class="btn btn-warning">Edit</a>
 					</td>
 				</tr>
 			<?php } ?>
